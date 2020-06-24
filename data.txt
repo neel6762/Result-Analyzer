@@ -1,0 +1,37 @@
+--> Create a session on every page , make this the first line
+    session_start();
+
+
+--> to add to $_SESSION[]
+    $_SESSION['name'] = var
+    ex:: $_SESSION['currentUser'] = $id;
+    
+--> to destroy the user session use the following functions
+    session_unset(); to clear all the session variables
+    session_destroy(); to session
+    
+--> to not allow certain pages for direct access
+    
+    if(!$_SESSION['name']){
+        header("Location: target_page");
+    }
+
+// Grade php code
+
+<div class="col">
+                        <div class="form-group">
+                            <label for="">Grade</label>
+                            <select name="Grade" id="" class="form-control">
+                                <option value="AA">AA</option>
+                                <option value="AB">AB</option>
+                                <option value="BB">BB</option>
+                                <option value="BC">BC</option>
+                                <option value="CC">CC</option>
+                                <option value="CD">CD</option>
+                                <option value="DD">DD</option>
+                                <option value="FF">FF</option>
+                            </select>
+                        </div>
+                    </div>
+
+
